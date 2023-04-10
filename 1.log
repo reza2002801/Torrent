@@ -1,0 +1,6 @@
+2023-04-09 21:16:20,256 user 1 is online now
+2023-04-09 21:16:23,586 user 1 shares the file 1 on the network
+2023-04-09 23:13:03,690 user 1 is online now
+2023-04-09 23:13:07,535 the user on address ('127.0.0.1', 12345) have the file 2
+2023-04-09 23:13:07,548 user 1 get the file 2 from the peer on address ('127.0.0.1', 12345)
+2023-04-09 23:15:23,134 user 1 is disconnected

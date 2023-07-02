@@ -1,35 +1,33 @@
-# Torrent
-a simple Torrent clone to share and get files without any thirdparty server
+#  🌐 Torrent: A Simple P2P File Sharing Project 
 
-Peer Server Cli command 
-<ul>
-<li> get [file Name] :gets a file from another online peer in the network using file Name</li>
+Welcome to Torrent! This is a simple project for sharing and acquiring files without any third-party server. This Torrent clone allows you to quickly share files in a peer-to-peer network. We also implement a `keep alive` system to manage network connections.
 
-<li>share [file Name] :Notice the tracker server that this peer has chuncks of that specific file </li>
+## 🛠️ Commands 
 
-<li>log: outputs the log of this peer server </li>
+### Peer Server CLI Commands
 
-<li>q: disconnecting from the network</li>
+- **get [file Name]** - Fetches a file from another online peer in the network using file name.
+- **share [file Name]** - Notifies the tracker server that this peer has chunks of a specific file.
+- **log** - Outputs the log of this peer server.
+- **q** - Disconnects from the network.
 
-</ul>
+### Tracker Server CLI Commands
 
+- **get [file Name]** - Fetches a file from another online peer in the network using file name.
+- **file_logs [file Name/all]** - Returns all the logs related to a specific file in the network or all the files in the network.
+- **log** - Outputs the log of this peer server.
+- **online_users** - Returns current users that are online in the network.
 
-Tracker Server Cli command
+## 🔄 Keep Alive System
 
-<li> get [file Name] :gets a file from another online peer in the network using file Name</li>
+When a peer wants to quit, the 'q' command is used. The peer then sends a message to the tracker server to notifythat it wants to quit the network. This way, the peer can gracefully leave the network without disrupting the service.
 
-<li> file_logs [file Name/all] :return all the logs related to an specific file in the network or all the files in the network </li>
+## 🚀 Getting Started
 
-<li>log: outputs the log of this peer server </li>
+To get started, you'll need to clone this repository to your local machine. Once that's done, you can run the tracker server and peer server separately on different command line interfaces (CLI).
 
-<li>online_users: returns current users that are online in the network</li>
+Please note that both the peer and tracker servers need to be running for the network to operate.
 
+## 👋 Contributing
 
-</ul>
-
-
-<b>Keep alive system</b>
-</br>
-when we are going to quit one peer we press q command and the peer send a message to the tracker server so that it notifies that the peer wants to quit
-
-
+We encourage you to contribute to Torrent! Please check out the [Contributing to Torrent guide](CONTRIBUTION.md) for guidelines
